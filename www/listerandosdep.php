@@ -7,20 +7,24 @@
         users.pseudo as pseudo
         FROM annonces INNER JOIN users
         ON annonces.id_users = users.id
-        ORDER BY id_a ASC'
+        ORDER BY departement ASC'
         );
     ?>
 
         <head>
                 <title> Liste Randos </title>
-                <h2> Bonjour <?php echo $_SESSION['userPseudo'] ?> et bienvenue sur cette plateforme de partage <h2>
+
                <!-- <link rel="stylesheet" href="listerandos.css" /> -->
 
         </head>
 
         <body>
             <div id="bloc_body">
-            
+                <header>
+                    <h2> Bonjour <?php echo $_SESSION['userPseudo'] ?> et bienvenue sur cette plateforme de partage <h2>
+
+                </header>
+
                 <div class="commun">
                     <table>
                         <tr>

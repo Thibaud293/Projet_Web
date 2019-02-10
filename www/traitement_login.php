@@ -51,7 +51,7 @@ session_start();
                         {
                             $_SESSION['userID'] = $row['id'];
                             $_SESSION['userPseudo'] = $pseudo;
-                            header('Location: ./ajoutrando.php'); //Mettre ici un lien vers la liste des annonces
+                            header('Location: ./listerandos.php'); //Mettre ici un lien vers la liste des annonces
                         }
 
                     }

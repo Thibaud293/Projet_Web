@@ -51,7 +51,7 @@
 
             ));
 
-            header('Location: ./page1.php');
+            header('Location: ./listerandos.php');
         }
 
         else 

@@ -1,8 +1,7 @@
 <html>
     <head>
-            <title> Login </title>
-
-            <h1> Se connecter </h1>
+        <title> Accueil </title>
+        <h2> Bonjour et bienvenue sur cette plateforme de partagee d'expérience </h2>
 
             
     </head>
