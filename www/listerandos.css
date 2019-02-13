@@ -1,0 +1,65 @@
+body
+{
+    margin : 0;
+    padding : 0;
+    background-image:url("refuge2.jpg");
+    background-size:100%;
+    background-repeat: no-repeat;
+    color:white;
+
+}
+
+#bloc_body
+{
+    width:100%;
+
+}
+
+header h2
+{
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.commun
+{
+    display:inline-block;
+    width:100% ;
+
+}
+
+.commun table
+{
+    margin: auto ;
+    border-spacing : 15px ;
+}
+
+#LRandos
+{
+    margin : auto ;
+    vertical-align: top ;
+    text-align : center ;
+}
+
+
+#LRandos h5
+{
+    text-indent: -25% ;
+    font-size : medium ;
+}
+
+#LRandos h4
+{
+    text-indent: +25% ;
+    font-size : medium ;
+    margin-bottom: 4%;
+}
+
+#LRandos h3
+{
+    font-size : x-large ;
+}
+
+
+
+
