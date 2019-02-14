@@ -1,5 +1,6 @@
 <?php
-session_start();
+    //page permettant de vérifier les pseudo et mdp de l'utilisateur qui essaye de se connecter
+session_start(); //Cette ligne permet d'utiliser des variables $_SESSION dans la page
             try
             {
             //On se connecte à MySQL
@@ -15,7 +16,7 @@ session_start();
             //On récupère le contenu de la table
             $reponse = $bdd->query('SELECT * FROM users');
 
-                if( (isset($_POST['pseudo'])) AND (isset($_POST['pass'])) )
+                if( (isset($_POST['pseudo'])) AND (isset($_POST['pass'])) ) //Si le pseudo et le mdp ont bien été entrés
                 {
                     
                     $pseudo = $_POST['pseudo'];
@@ -44,14 +45,14 @@ session_start();
                     $id_pseudo = $req_psd->fetch();
                     $id_pass = $req_pass->fetch();
 
-                    if($id_pseudo == $id_pass)
+                    if($id_pseudo == $id_pass) //Condition pour vérifier que le pseudo et le mdp correspondent bien à la même ligne de la base de donnée
                     {
                        
                         foreach($req as $row)
                         {
                             $_SESSION['userID'] = $row['id'];
                             $_SESSION['userPseudo'] = $pseudo;
-                            header('Location: ./listerandos.php'); //Mettre ici un lien vers la liste des annonces
+                            header('Location: ./listerandos.php'); //Si les logs sont validées, renvoi vers la liste des randos
                         }
 
                     }

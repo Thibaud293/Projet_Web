@@ -1,28 +1,20 @@
 ﻿<html>
     <head>
             <title> Formulaire d'inscription</title>
-            
 
-		<!-- Penser à rajouter les accents -->
-		<!-- Rajouter un message de bienvenue après inscription en faisant un rapide débrif de pourquoi insérer la date de naissance et le mail-->
+            <link rel="stylesheet" href="formulaire.css" /> <!-- Lien vers la page css -->
         
         
-        <style>
-        label {
-            width : 15% ;
-            display: block;
-            float : left;
-            
-        }
-        </style>
     </head>
 
     
     <body>
+        <div id="bloc_body">
         <form method="post" action="traitement_formulaire.php">
-            <p>
+            <h2>
                 Formulaire d'inscription au site
-            </p>
+            </h2>
+
             <p>
                 <label for="pseudo">Entrez votre pseudo</label> : <input type="text" name="pseudo" id="pseudo" />
             </p>
@@ -51,10 +43,12 @@
                 <input type="submit" value="Envoyer le formulaire" />
             </p>
 
+            <h4> Votre e-mail sera uniquement utilisé par les utilisateurs pour demander plus d'informations sur vos annonces </h4>
             
 
 
         </form>
+        </div>
         
         
 

@@ -1,0 +1,30 @@
+label 
+{
+            width : 15% ;
+            display: block;
+            float : left;
+            
+}
+body
+{
+    margin : 0;
+    padding : 0;
+    background-image:url("refuge1.png");
+    background-size:100%;
+    background-repeat: no-repeat;
+    color:white;
+    text-align: center;
+    
+
+}
+
+#bloc_body
+{
+    width:100%;
+    
+
+}
+h4
+{
+    margin-top: 17% ;
+}

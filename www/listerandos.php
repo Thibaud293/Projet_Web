@@ -13,7 +13,7 @@
 
         <head>
                 <title> Liste Randos </title>
-                <link rel="stylesheet" href="listerandos.css" />
+                <link rel="stylesheet" href="listerandos.css" /> <!-- Lien vers la page css -->
 
         </head>
 

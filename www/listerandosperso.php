@@ -21,7 +21,7 @@
 
         <head>
                 <title> Liste Randos </title>
-                <link rel="stylesheet" href="listerandos.css" />
+                <link rel="stylesheet" href="listerandos.css" /> <!-- Lien vers la page css -->
 
         </head>
 
@@ -59,8 +59,23 @@
                     ?>
                         <p>
                             <h3>Titre : <?php echo $row['titreR'] ?> </h3>
-                            <h5>Proposée par : <?php echo $row['pseudo'] ?> </h5>
                             <h4>Département : <?php echo $row['departement'] ?> </h4>
+                            <p>
+                                <a href="listerandosperso.php"> Supprimer cette annonce </a>
+                                <?php
+                                    
+                                    $sup = $bdd->prepare(
+                                        'DELETE FROM annonces
+                                        WHERE titreR = :titreSup'
+                                    );
+
+                                    $sup->execute(array(
+                                        'titreSup' => $row['titreR'],
+                                    )); 
+                                    
+                                ?>
+                                
+                            <p>
                         <p>
                     <?php
                         }
